@@ -14,7 +14,6 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
   height: auto;
-
 }
 
 .navbar {
@@ -87,28 +86,27 @@ section .landing-page .foto img {
   transition: all 0.6s ease 0.2s;
 }
 
-section .landing-page .btn-group{
+section .landing-page .btn-group {
   display: flex;
   align-items: center;
   gap: 30px;
-
 }
 
-section .landing-page .btn-group span a{
-
+section .landing-page .btn-group span a {
   margin-top: 20px;
   width: 50px;
   height: 50px;
   color: #271cff;
   padding: 10px;
   border: 3px solid #271cff;
-  border-radius: 50%;        /* biar lingkaran */
-  display: flex;             /* aktifkan flex */
-  align-items: center;       /* center secara vertikal */
-  justify-content: center;   /* center secara horizontal */
-  font-size: 32px;           /* atur ukuran ikon biar proporsional */
-  text-decoration: none;     /* hilangkan underline link */
+  border-radius: 50%; /* biar lingkaran */
+  display: flex; /* aktifkan flex */
+  align-items: center; /* center secara vertikal */
+  justify-content: center; /* center secara horizontal */
+  font-size: 32px; /* atur ukuran ikon biar proporsional */
+  text-decoration: none; /* hilangkan underline link */
 }
+
 .kosong {
   width: 80%;
   border-bottom: 5px #271cff dashed;
@@ -275,12 +273,12 @@ section .contact .judul {
   align-items: center;
 }
 
-.wa a{
+.wa a {
   display: flex;
   align-items: center;
   gap: 20px;
   margin: 60px 40px;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .wa img {
@@ -288,20 +286,19 @@ section .contact .judul {
   height: 100px;
 }
 
-.wa h1{
+.wa h1 {
   color: #4dc04b;
   font-size: 40px;
   font-weight: 800;
   display: inline;
-
 }
 
-.gmail a{
+.gmail a {
   display: flex;
   align-items: center;
   gap: 20px;
   margin: 40px 40px;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .gmail img {
@@ -309,39 +306,33 @@ section .contact .judul {
   height: 75px;
 }
 
-.gmail h1{
+.gmail h1 {
   color: #d62929;
   font-size: 30px;
   font-weight: 800;
   display: inline;
 }
 
-
-
-footer{
+footer {
   width: 100%;
   height: 200px;
   background-color: #271cff;
-
 }
 
 footer .text {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
   padding-bottom: 20px;
   color: white;
   height: 200px;
   font-size: 25px;
 }
 
-footer .text a{
-   color: white;
+footer .text a {
+  color: white;
 }
-
-
-
 
 /* Hover */
 .landing-page .tulisan .btn-group button:hover {
@@ -385,32 +376,44 @@ section .nav-info a:hover::after {
   transform: scale(0.9);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 578px) {
   .navbar {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
     height: auto;
     padding: 15px;
     text-align: center;
+    margin: 20px;
+    max-width: 800px;
+    gap: 15px;
   }
 
   .navbar h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 0.7em;
+
+    width: 120px;
+    flex-wrap: wrap;
+    text-align: left;
   }
 
   .nav-content {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    font-size: 0.3em;
   }
 
   .nav-content a {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   section .landing-page {
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
+    gap: 180px;
+
   }
 
   section .landing-page .tulisan {
@@ -421,7 +424,110 @@ section .nav-info a:hover::after {
   }
 
   section .landing-page .foto img {
-    width: 80%;
+    width: 60%;
     padding: 0;
+
   }
+
+  section .landing-page .btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+section .nav-info {
+  font-size: .4em;
+  gap: 30px;
+}
+
+section .Perkenalan {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px;
+  gap: 30px;
+  margin-top: 70px;}
+
+.Perkenalan .perkenal {
+  display: inline-block;
+  border: #271cff 5px dashed;
+  border-radius: 20px;
+  width: 40vh;
+  padding: 20px;
+  font-size: .8em;
+}
+
+/* KONTAK */
+.wa-gmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wa {
+  height: 100px;
+  margin-top: -50px;
+}
+.wa a {
+  align-items: center;
+  /* gap: 20px; */
+  /* margin: 60px 40px; */
+  text-decoration: none;
+}
+
+.wa img {
+  width: 50px;
+  height: 50px;
+}
+
+.wa h1 {
+  color: #4dc04b;
+  font-size: 1.2em;
+  font-weight: 800;
+
+}
+
+
+.gmail a {
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+  margin: 40px 40px;
+  text-decoration: none;
+}
+
+.gmail img {
+  width: 50px;
+  height: 37.5px;
+}
+
+.gmail h1 {
+  color: #d62929;
+  font-size: 1em;
+  font-weight: 800;
+  display: inline;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  height: 150px;
+}
+footer .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 150px;
+  font-size: .6em;
+  text-align: center;
+}
+footer .text h2 a svg{
+ width: 15px;   /* atur lebar ikon */
+  height: 15px;  /* atur tinggi ikon */
+  stroke-width: 2; /* ketebalan garis ikon */
+  margin-left: 5px; /* jarak dari teks */}
 }
