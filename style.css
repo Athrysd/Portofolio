@@ -416,6 +416,42 @@ section .nav-info a:hover::after {
 
   }
 
+section .landing-page .tulisan {
+  width: auto;
+  height: 100px;
+  /* margin-top: -20px; */
+  margin-left: 70px;
+  font-size: 20px;
+  line-height: 34px;
+
+}
+
+ section .landing-page .tulisan h1 {
+  font-size: 1.5em;
+}
+
+section .landing-page .tulisan h2 {
+  font-size: 1.2em;
+  font-weight: 550;
+  margin-left: 20px;
+  margin-right: 20px;
+} 
+section .landing-page .tulisan p {
+  font-size: 0.75em;
+}
+
+section .landing-page .tulisan button {
+  height: 33px;
+  width: 100px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #271cff;
+  color: white;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
   section .landing-page .tulisan {
     width: 100%;
     margin-left: 0;
@@ -433,7 +469,28 @@ section .nav-info a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
+
+  section .landing-page .btn-group span a {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  color: #271cff;
+  border: 3px solid #271cff;
+  border-radius: 50%; /* biar lingkaran */
+  display: flex; /* aktifkan flex */
+  align-items: center; /* center secara vertikal */
+  justify-content: center; /* center secara horizontal */
+  font-size: 32px; /* atur ukuran ikon biar proporsional */
+  text-decoration: none; /* hilangkan underline link */
+}
+
+section .landing-page .btn-group span a svg {
+  width: 40px;
+  height: 40px;
+}
+
 
 section .nav-info {
   font-size: .4em;
